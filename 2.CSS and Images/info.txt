@@ -1,0 +1,14 @@
+We can also load css less and sass.
+Webpack and CSS:
+1. Bundle only the styles that app uses.
+2. Import or require certain styles for certain files.
+3. Transform SAAS or LESS to CSS.
+
+For loading style we require to install 
+for sass we need to install sass-loader node-sass
+
+Similarly it can be done for LESS
+
+LOADING IMAGES:
+1. npm install url-loader file-loader:
+Webpack inlines the url to the image bumdle and then returns this from require. Inlinig will ewduce the no. of http request and hence we can make our site fast.
