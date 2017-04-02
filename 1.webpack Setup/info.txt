@@ -1,0 +1,31 @@
+Webpack is a build tool that allows us to take our assets and dependencies and turn them into production ready bundles.
+
+Why webpack: We see we create bunch of script tags in index.html and the code becomes hectic. Also all these are http request and causes loading time issues. 
+SO webpack peovides alternative with the concept called --dependency graph.
+--Require assets like css, js, images
+--load only needed assets that are required.
+--Split app into diffetent files.
+
+WEBPACK TRANSFORMATIONS:
+Webpack also helps in transformation such as:
+1. SAAS
+2. LESS
+3. REACT
+4. ES6
+
+INSTALLING WEBPACK
+
+After installing and setting up config file we on console type webpack and it creates a file bundle.js
+But the webpack stops after this. To keep webpack running we alsoo set -w i.e. watch flag. So in conosle we type webpack -w. It watches for changes in entry files.
+
+WEBPACK LOADERS::
+Help us load and perform transformation. Eg. REact jsx and es6 needs to be transpiled into plain JS to run in browsers. For this transpilation is Babel. When we use babel we tell webpack to perform transformation into JS.
+
+SETTING BABEL LOADER
+install babel-loader babel-core --save-dev
+babel-loader is loader and babel-core is the core module that hadles transpiling
+in webpack make chaneges in module and loaders
+
+To transpile we need to specify what you need to transpile using presets. Also we make a babelrc file. THen we install babel-preset-es2015 and babel-preset-react. Now we see our bundle.js then we see all out es6 code is transpiled into JS.
+
+We can use multiple loaders not only above two loaders. We can see list of loaders on internet.
